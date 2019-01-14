@@ -1,23 +1,126 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>CSS/HTML Workshop with Privateaser</title>
-  </head>
-  <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privateaser</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--==
+    Header
+  =====-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">Privateaser</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
     </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+  </header><!-- #header -->
+
+  <!--=
+    Intro Section
+  =-->
+
+    <!--====
+      Pricing Section
+  ===============-->
+
+    <section id="pricing" class="section-bg">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Pricing</h3>
+          <span class="section-divider"></span>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box featured wow fadeInUp">
+              <h3>Tarifs</h3>
+              <div id="bar">
+          <input class="name" type="text" placeholder="Bar name"/>
+          <input class="price-by-hour" type="number" placeholder="Price by hour"/>
+          <input class="price-by-person" type="number" placeholder="Price by person"/>
+        </div>
+        <div id="booker">
+          <input class="name" type="text" placeholder="Booker name"/>
+          <input class="time" type="number" placeholder="Time in h"/>
+          <input class="persons" type="number" placeholder="Persons"/>
+          <input class="option" type="checkbox" placeholder="Deductible option"/>
+        </div>
+          <br></br>
+        <button id="compute" type="button" class="button button5">Compute</button>
+          <br></br>
+        <div id="actors"></div>
+            </div>
+          </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #pricing -->
+
+
+
+ 
+
+
+  </main>
+
+  <!--==
+    Footer
+  ===-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="credits">
+                    </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+          </nav>
+        </div>
+      </div>
     </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="privateaser.js"></script>
-    <script src="index.js"></script>
-  </body>
+  </footer><!-- #footer -->
+  <script src="privateaser.js"></script>
+<script src="index.js"></script>
+
+
+
+
+
+
+
+</body>
 </html>
